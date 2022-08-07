@@ -1,0 +1,215 @@
+#wraper{
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+/*.eee{
+    display: block;
+    width: 500px;
+    height: 300px;
+}*/
+/*задача 1*/
+@keyframes AnimatoinFirst {
+    from{margin-left: 10px;}
+    to{margin-left: 300px;}
+}
+.an1{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red; 
+    animation: AnimatoinFirst 2s 3;
+    animation-timing-function: ease-out;
+}
+/*задача 2*/
+@keyframes AnimatoinSecond {
+    from{margin-left: 10px;}
+    to{margin-left: 300px;}
+}
+.an2{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red; 
+    animation: AnimatoinSecond 2s infinite;
+    animation-timing-function: ease-out;
+}
+/*задача 3*/
+@keyframes BackgroudColorAnimation {
+    from{background-color: red;}
+    to{background-color: white;}
+}
+.an3{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    animation: BackgroudColorAnimation 1.5s infinite;
+    animation-timing-function: ease-in-out;
+}
+/*задача 4*/
+@keyframes AnimationThird {
+    0%{margin-left: 0px; margin-top: 0px;}
+    25%{margin-left: 400px; margin-top: 0px;}
+    50%{margin-left: 400px; margin-top: 200px;}
+    75%{margin-left: 0px; margin-top: 200px;}
+    100%{margin-left: 0px; margin-top: 0px;}
+}
+.an4{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red; 
+    animation: AnimationThird 8s infinite;
+    animation-timing-function: linear;
+}
+/*задача 5*/
+@keyframes Animation5 {
+    0%{margin-left: 0px; margin-top: 0px;}
+    25%{margin-left: 400px; margin-top: 0px;}
+    50%{margin-left: 400px; margin-top: 200px;}
+    75%{margin-left: 0px; margin-top: 200px;}
+    100%{margin-left: 0px; margin-top: 0px;}
+}
+@keyframes Animation55{
+    0%{background-color: white;}
+    50%{background-color: red;}
+    100%{background-color: white;}
+}
+.an5{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red; 
+    animation: Animation5 8s infinite, Animation55 2s infinite;
+    animation-timing-function: linear;
+}
+/*задача 6*/
+@keyframes Animation6 {
+    0%{margin-left: 0px;}
+    50%{margin-left: 400px;}
+    100%{margin-left: 0px;}
+}
+.an6{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red; 
+    animation: Animation6 3s infinite;
+    animation-timing-function: ease-out;
+}
+/*задача 7*/
+@keyframes Animation7 {
+    from{margin-left: 0px;}
+    to{margin-left: 400px;}
+}
+.an7{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red; 
+    animation: Animation7 3s infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+/*задача 8*/
+@keyframes Animation8 {
+    from{width: 0px;}
+    to{width: 300px;}
+} 
+.an8{
+    width: 300px;
+    height: 50px;
+    margin: 0px auto;
+    border: 1px solid red;
+}
+.an88{
+    background-color: red;
+    width: 0px;
+    height: 50px;
+    animation: Animation8 4s linear;
+    animation-fill-mode: forwards;
+}
+/*задача 9*/
+@keyframes Animation9 {
+    from{width: 0px;}
+    to{width: 300px;}
+} 
+.an9{
+    width: 300px;
+    height: 50px;
+    margin: 0px auto;
+    border: 1px solid red;
+}
+.an99{
+    background-color: red;
+    width: 0px;
+    height: 50px;
+    animation: Animation9 10s linear infinite;
+}
+/*задача 10*/
+@keyframes Animation10 {
+    from{width: 50px;}
+    to{width: 500px;}
+} 
+.an10{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation: Animation10 3s linear infinite;
+    animation-direction: alternate;
+    animation-play-state: paused;
+}
+.an10:hover{
+    width: 500px;
+    height: 40px;
+    animation: Animation10 3s linear infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+/*задача 11*/
+@keyframes Animation11 {
+    from{width: 100px;}
+    to{width: 500px;}
+}
+.an11{
+    width: 20%;
+    height: 40px;
+    padding: 10px 0px 0px 10px;
+    font-size: 20px;
+    border: 1px solid red;
+}
+.an111{
+    width: 10%;
+    height: 60px;
+    margin-top: 10px;
+    border: 1px solid blue;  
+    animation: Animation11 4s linear infinite;
+    animation-direction: alternate;
+    animation-play-state: paused;
+}
+.an11:hover + .an111{
+    animation: Animation11 4s linear infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+/*задача 12*/
+@keyframes Animation12 {
+    0%{margin-top: 0px; margin-left: 0px;}
+    40%{margin-top: 280px; margin-left: 30px;}
+    65%{margin-top: 180px; margin-left: 60px;}
+    85%{margin-top: 280px; margin-left: 90px;}
+    100%{margin-top: 270px; margin-left: 120px;}
+}
+.an12{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.an122{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    animation: Animation12 5s ease-in-out infinite;
+    animation-play-state: running;
+}
+.an12:hover + .an122{
+    animation: Animation12 5s ease-in-out infinite;
+    animation-play-state: running;
+}
